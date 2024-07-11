@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    --color100: #02111b;
+    --colorclaro: #3c6997;
+    --colortexto: #fcfcfc;
+    --coloralternativo: #cf5c36;
+    color: var(--colortexto);
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.8) 0,
+            rgba(0, 0, 0, 0.5)),
+        url(img/fondo_desktop.jpg);
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero2 {
+    flex: 4;
+    text-align: center;
+    padding-top: 45vh;
+    font-size: 2em;
+}
+
+h1 {
+    color: rgb(238, 238, 238);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.apellido {
+    color: var(--colorclaro);
+    font-weight: 400;
+}
+
+.boton-header {
+    background: transparent;
+    border: solid 2px var(--colorclaro);
+    border-radius: 25px;
+    color: var(--colortexto);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.boton-header:hover {
+    background-color: #3c699772;
+    font-weight: 700;
+
+}
+
+nav {
+    flex: 1;
+    height: 100vh;
+    background-color: var(--color100);
+    text-align: center;
+    padding-top: 25vh;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 4em;
+}
+
+li {
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--colorclaro);
+}
+
+nav ul img {
+    border-radius: 80px;
+
+}
+
+
+.contenor_img_nav {
+    margin: auto;
+    margin-top: 3em;
+}
+
+.contenor_img_nav img {
+    margin: 20px;
+}
+
+
+/* main*/
+.sobre_mi_componet {
+ background: var(--colorclaro);
+ height: 100vh ;
+ width: 100vw;
+}
+.wrapper{
+    display: flex; /* Activa Flexbox en el contenedor wrapper */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+.sobre_mi_content {
+    display: flex; /* Activa Flexbox en el contenido sobre_mi_content */
+    flex-direction: row; /* Alinea los elementos en fila */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.sobre_mi_content p{
+    margin-top: 5em;
+    width: 43vw;
+    line-height: 3em;
+    font-size: 1.3rem;
+
+
+}
+
+.text {
+    flex: 1; /* Toma todo el espacio disponible */
+    padding-right: 20px; /* Espacio entre texto e imagen */
+}
+
+.image {
+    flex: 0 0 auto; /* No crece, tamaño automático según contenido */
+    max-width: 400px; /* Ancho máximo de la imagen */
+}
+
+.image img {
+    width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
